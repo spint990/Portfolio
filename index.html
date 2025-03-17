@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Ajout Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Votre Nom</div>
+            <div class="logo">SPYN</div>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#apropos">A Propos</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -22,21 +24,21 @@
 
     <section id="accueil">
         <div class="container">
-            <h1>Bonjour, je suis [Votre Nom]</h1>
-            <p>[Votre titre/profession]</p>
+            <h1>Bienvenue sur mon portfolio, je suis Thomas SPINNEWYN</h1>
+            <p>Chef du pôle 3D/Simulateur au FanL@b</p>
             <a href="#contact" class="btn">Me Contacter</a>
         </div>
     </section>
 
     <section id="apropos">
         <div class="container">
-            <h2>À Propos de Moi</h2>
+            <h2>A Propos de Moi</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Écrivez ici une courte biographie professionnelle...</p>
+                    <p>Je suis développeur spécialisé dans la conception et l'évolution de systèmes informatiques, avec une expertise en Unity et en simulation. J'ai acquis des compétences solides en architecture logicielle, programmation orientée objet et gestion de bases de données, notamment en Java et en technologies web. Passionné par la création d'environnements interactifs, je conçois des systèmes avancés, comme des simulateurs et des modules de contrôle, en intégrant des mécaniques complexes pour une expérience immersive. Mon approche repose sur l'ingénierie logicielle et les méthodologies agiles pour développer des solutions performantes et optimisées.</p>
                 </div>
                 <div class="about-image">
-                    <img src="photo.jpg" alt="Votre photo">
+                    <img src="images/photo.png" alt="photo_ID">
                 </div>
             </div>
         </div>
@@ -48,12 +50,40 @@
             <div class="projects-grid">
                 <!-- Répétez ce bloc pour chaque projet -->
                 <div class="project-card">
-                    <img src="projet1.jpg" alt="Projet 1">
-                    <h3>Nom du Projet</h3>
-                    <p>Description courte du projet</p>
+                    <img src="images/projet1.png" alt="Projet 20mm">
+                    <h3>Simulateur 20mm</h3>
+                    <p>Le 20mm est un projet de simulation développé sous Unity, intégrant des modèles 3D de bateaux et un créateur de scénarios. Il permet aux utilisateurs de personnaliser des paramètres tels que la météo, l'état de la mer et l'heure, tout en plaçant des assets dynamiquement dans la scène. L'objectif est d'offrir une expérience immersive et modulaire pour la planification et la reconstitution de situations réalistes.</p>
                     <a href="#" class="btn">Voir Plus</a>
                 </div>
                 <!-- Fin du bloc projet -->
+
+                <div class="project-card">
+                    <img src="images/projet2.png" alt="Visite VR">
+                    <h3>Visite VR</h3>
+                    <p>Visite VR est une simulation en réalité virtuelle permettant une immersion complète à bord d'un navire de la Marine nationale. Ce projet offre aux marins un environnement interactif pour la formation et la maintenance, avec des scénarios réalistes d'entraînement et des interactions détaillées sur les équipements du bord.</p>
+                    <a href="#" class="btn">Voir Plus</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/projet3.png" alt="ShipSpotter">
+                    <h3>ShipSpotter</h3>
+                    <p>ShipSpotter est un simulateur de veille passerelle conçu pour entraîner les marins à l'identification des navires environnants. Grâce à une simulation réaliste sous Unity, il recrée des conditions de navigation variées où l'utilisateur doit observer, analyser et reconnaître les différents bâtiments.</p>
+                    <a href="#" class="btn">Voir Plus</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/projet4.png" alt="Impression 3D">
+                    <h3>Impression 3D</h3>
+                    <p>Je réalise des impressions 3D pour les marins et les bâtiments, qu'elles soient visuelles pour la formation ou fonctionnelles pour des usages spécifiques à bord. Ces impressions permettent de créer des maquettes, des pièces sur mesure et des outils adaptés aux besoins des équipages.</p>
+                    <a href="#" class="btn">Voir Plus</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/projet5.png" alt="Gestion de budget personnel">
+                    <h3>Gestion de budget personnel</h3>
+                    <p>J'ai développé une application simple de gestion de budget personnel en Java afin de m'entraîner à coder. L'application utilise la bibliothèque Swing pour l'interface graphique et SQLite pour stocker les données.</p>
+                    <a href="#" class="btn">Voir Plus</a>
+                </div>
             </div>
         </div>
     </section>
@@ -61,15 +91,71 @@
     <section id="competences">
         <div class="container">
             <h2>Mes Compétences</h2>
-            <div class="skills-container">
-                <!-- Répétez pour chaque compétence -->
-                <div class="skill">
-                    <h3>Nom de la Compétence</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 85%;"></div>
+            <div class="skills-grid">
+                <!-- C# Unity -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="icons/csharp.png" alt="C# Logo">
                     </div>
+                    <h3>C# Unity</h3>
                 </div>
-                <!-- Fin du bloc compétence -->
+                
+                <!-- HTML/CSS/JS -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="icons/web.png" alt="HTML CSS JS Logo">
+                    </div>
+                    <h3>HTML/CSS/JS</h3>
+                </div>
+                 
+                <!-- java -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="icons/java.png" alt="Java Logo">
+                    </div>
+                    <h3>Java</h3>
+                </div>
+
+                 <!-- VScode -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                         <img src="icons/vscode.png" alt="VScode Logo">
+                    </div>
+                    <h3>VScode</h3>
+                </div>
+                
+                <!-- Unity -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="icons/unity.png" alt="Unity Logo">
+                    </div>
+                    <h3>Unity</h3>
+                </div>
+                
+                <!-- Blender -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="icons/blender.png" alt="Blender Logo">
+                    </div>
+                    <h3>Blender</h3>
+                </div>
+                
+                <!-- SolidWorks -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="icons/solidworks.png" alt="SolidWorks Logo">
+                    </div>
+                    <h3>Suite Office</h3>
+                </div>
+
+                <!-- Suite Office -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="icons/office.png" alt="Office Logo">
+                    </div>
+                    <h3>Suite Office</h3>
+                </div>
+
             </div>
         </div>
     </section>
@@ -79,18 +165,29 @@
             <h2>Me Contacter</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>Email: votre@email.com</p>
-                    <p>Téléphone: +33 6 xx xx xx xx</p>
+                    <p><i class="fas fa-envelope"></i> Email: spint990@live.fr</p>
+                    <p><i class="fas fa-phone-alt"></i> Téléphone: +33 7 83 78 78 92</p>
                     <div class="social-links">
-                        <a href="#" target="_blank">LinkedIn</a>
-                        <a href="#" target="_blank">GitHub</a>
-                        <a href="#" target="_blank">Twitter</a>
+                        <a href="https://www.linkedin.com/in/thomas-spinnewyn-04a9b3193/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <a href="https://github.com/spint990" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                        <a href="https://www.instagram.com/la_spyn/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
                     </div>
                 </div>
                 <form class="contact-form">
-                    <input type="text" placeholder="Votre Nom" required>
-                    <input type="email" placeholder="Votre Email" required>
-                    <textarea placeholder="Votre Message" required></textarea>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Votre adresse email" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Votre message" required></textarea>
+                    </div>
                     <button type="submit" class="btn">Envoyer</button>
                 </form>
             </div>
@@ -99,9 +196,14 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 [Votre Nom]. Tous droits réservés.</p>
+            <p>&copy; 2025 Thomas SPINNEWYN. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <!-- Bouton pour basculer entre thème clair et sombre -->
+    <button id="dark-mode-toggle">
+        <i class="fas fa-sun"></i> Thème Clair
+    </button>
 
     <script src="script.js"></script>
 </body>
