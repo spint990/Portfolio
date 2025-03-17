@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Votre Nom</div>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <div class="container">
+            <h1>Bonjour, je suis [Votre Nom]</h1>
+            <p>[Votre titre/profession]</p>
+            <a href="#contact" class="btn">Me Contacter</a>
+        </div>
+    </section>
+
+    <section id="apropos">
+        <div class="container">
+            <h2>À Propos de Moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Écrivez ici une courte biographie professionnelle...</p>
+                </div>
+                <div class="about-image">
+                    <img src="photo.jpg" alt="Votre photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Répétez ce bloc pour chaque projet -->
+                <div class="project-card">
+                    <img src="projet1.jpg" alt="Projet 1">
+                    <h3>Nom du Projet</h3>
+                    <p>Description courte du projet</p>
+                    <a href="#" class="btn">Voir Plus</a>
+                </div>
+                <!-- Fin du bloc projet -->
+            </div>
+        </div>
+    </section>
+
+    <section id="competences">
+        <div class="container">
+            <h2>Mes Compétences</h2>
+            <div class="skills-container">
+                <!-- Répétez pour chaque compétence -->
+                <div class="skill">
+                    <h3>Nom de la Compétence</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <!-- Fin du bloc compétence -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Me Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Email: votre@email.com</p>
+                    <p>Téléphone: +33 6 xx xx xx xx</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">Twitter</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Votre Nom" required>
+                    <input type="email" placeholder="Votre Email" required>
+                    <textarea placeholder="Votre Message" required></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Votre Nom]. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
